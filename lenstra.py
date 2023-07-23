@@ -53,17 +53,18 @@ def main():
     args = parser.parse_args()
 
     n = args.number
-    limit = 100000  # Limit for Lenstra's algorithm
+    limit = 500000  
 
     factor = lenstra(n, limit)
     if factor is not None:
-        print(f"A nontrivial factor of {n} is {factor}")
+        print(f"Found a factor of {n} using Lenstra's algorithm.")
+        print(f"The factor is {factor}")
         print(f"The other factor is {n // factor}")
     else:
         print(f"Failed to find a factor of {n} using Lenstra's algorithm.")
         print(f"Trying to factor {n} using sympy's factorint function.")
         factors = factorint(n)
-        print(f"{n} is prime. Its factors are {factors}")
+        print(f"Factors of {n} are {factors}")
 
 if __name__ == '__main__':
     main()
