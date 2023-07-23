@@ -34,9 +34,9 @@ pip install gmpy2 sympy
 
 ## Usage
 To use the script, you need to provide the composite number you want to factor as a command line argument. Here's an example:
-
+```bash
 python3 lenstra.py -n 561
-
+```
 In this example, 561 is the number we want to factor. The script will then run Lenstra's algorithm with a certain number of iterations to try to find a nontrivial factor. If it can't find one, it will use sympy's factorint function as a fallback.
 
 ## Disclaimer
