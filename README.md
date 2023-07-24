@@ -9,7 +9,7 @@ also, see [this](https://www.youtube.com/watch?v=V0rDc0V1g5c) video for a good e
 ## Algorithm Explanation
 The Lenstra elliptic curve factorization method leverages the mathematical properties of elliptic curve groups to factor integers. Unlike more standard factorization techniques, Lenstra's approach uses probability to find prime factors.
 
-The core idea is to randomly generate an elliptic curve and a point P on that curve. The order of P is calculated, which will reveal a factor of the target composite number with some probability. This process of generating random curves repeat until a non-trivial factor is uncovered.
+The core idea is to randomly generate an elliptic curve and a point P on that curve. The order of P is calculated, which will reveal a factor of the target composite number with some probability. This process of generating random curves repeats until a non-trivial factor is uncovered.
 
 The advantage of Lenstra's algorithm is its ability to efficiently find relatively small factors, making it well-suited for factoring large semi-prime numbers. By harnessing the structure of elliptic curve groups, it takes a novel probabilistic approach to integer factorization. \n
 Here's a rough sketch of how the algorithm works:
