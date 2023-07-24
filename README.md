@@ -3,7 +3,7 @@
 This code implements Lenstra's elliptic curve factorization algorithm in Python. The algorithm attempts to find a non-trivial factor of a given composite number. If it is unable to find a factor within a set number of iterations, the script falls back to using the factorint function from sympy's ntheory module. The combination of Lenstra's algorithm and the sympy fallback provides a robust factorization tool.
 
 A detailed explanation of the algorithm can be found [here](https://en.wikipedia.org/wiki/Lenstra_elliptic-curve_factorization).
-also see [this](https://www.youtube.com/watch?v=V0rDc0V1g5c) video for a good explanation of the algorithm.
+also, see [this](https://www.youtube.com/watch?v=V0rDc0V1g5c) video for a good explanation of the algorithm.
 
 
 ## Algorithm Explanation
